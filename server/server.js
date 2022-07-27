@@ -31,4 +31,9 @@ if (process.env.NODE_ENV === "production") {
 
 app.use(errorHandler);
 
-app.listen(port);
+let server = app.listen(port);
+
+server.on("clientError", (err, socket) => {
+  console.error(err);
+  socket.end("HTTP/1.1 400 Bad Request\r\n\r\n");
+});
