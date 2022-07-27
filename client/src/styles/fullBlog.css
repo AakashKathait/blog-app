@@ -129,7 +129,6 @@
 
 .comment-author {
   font-family: "Antonio", sans-serif;
-  text-align: right;
   color: #8e05c2;
   font-size: 1.4rem;
   letter-spacing: 1px;
@@ -174,5 +173,14 @@
   }
   .comment {
     font-size: 1.2rem;
+  }
+  .comment-author {
+    font-size: 1rem;
+  }
+  .fullblog-logo {
+    width: 15%;
+  }
+  .comment-input {
+    width: 50%;
   }
 }
