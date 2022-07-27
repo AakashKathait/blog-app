@@ -10,3 +10,7 @@ body {
 body {
   background-color: #eeeeee;
 }
+* {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
