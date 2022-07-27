@@ -8,7 +8,6 @@ const userRoutes = require("./routes/userRoutes");
 const errorHandler = require("./middleware/errorMiddleware");
 const app = express();
 const connectDB = require("./config/db");
-
 connectDB();
 
 app.use(express.json());
