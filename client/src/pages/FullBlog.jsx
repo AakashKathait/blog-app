@@ -98,6 +98,10 @@ const FullBlog = () => {
           position: toast.POSITION.TOP_CENTER,
         });
       } else {
+        window.scroll({
+          top: 0,
+          behavior: "auto",
+        });
         toast.error("Please add a comment", {
           position: toast.POSITION.TOP_CENTER,
         });
