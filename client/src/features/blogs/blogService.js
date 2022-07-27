@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API_URL = "/api/blogs/";
-const BASE_URL = window.location.origin;
+
 const createBlog = async (blogData, token) => {
   const config = {
     headers: {
@@ -33,7 +33,7 @@ const deleteBlog = async (id, token) => {
 };
 
 const getBlogs = async () => {
-  const res = await axios.get(BASE_URL + API_URL);
+  const res = await axios.get(API_URL);
   return res.data;
 };
 
