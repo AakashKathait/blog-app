@@ -154,12 +154,15 @@ input:focus {
   }
   .form {
     margin-top: 0;
-    padding: 2rem 1rem ;
+    padding: 2rem 1rem;
     width: 80%;
   }
   .btn {
     margin-top: 0.5rem;
     font-size: 0.9rem;
     padding: 0.2rem;
+  }
+  .show-hide {
+    top: 7px;
   }
 }
