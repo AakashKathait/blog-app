@@ -1,0 +1,154 @@
+.nav-container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  top: 0;
+  justify-content: center;
+  background-color: #180127;
+  box-shadow: rgba(17, 17, 26, 0.5) 0px 2px 25px;
+  z-index: 2;
+  transition: top 0.3s ease-in-out;
+}
+
+.nav-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 3px;
+  bottom: 0;
+  background-color: #ddd;
+}
+
+.hide {
+  top: -8rem;
+  transition: top 0.3s ease-in-out;
+}
+
+.nav {
+  max-width: 1500px;
+  width: 85%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.username {
+  font-family: "Antonio", sans-serif;
+  color: #dddddd;
+  font-size: 1.5rem;
+}
+
+.logo-container {
+  font-family: "Major Mono Display", monospace;
+  color: #dddddd;
+}
+
+.logo-container h1 {
+  cursor: pointer;
+}
+
+.links-container {
+  font-family: "Antonio", sans-serif;
+  font-size: 1.5rem;
+  color: #dddddd;
+  display: flex;
+  justify-content: flex-end;
+  width: fit-content;
+}
+
+.register,
+.username {
+  cursor: pointer;
+  transition: color 0.2s ease;
+  margin-left: 20px;
+}
+
+.register:hover {
+  color: white;
+}
+
+.login {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.login:hover {
+  color: white;
+}
+
+.logout {
+  margin-right: 1rem;
+}
+
+.logout button {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  color: #dddddd;
+  border: none;
+  font-family: "Antonio", sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logout button:hover {
+  color: white;
+}
+
+.auth-logo {
+  height: 22px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+@media only screen and (min-width: 960px) {
+  .logo-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .register,
+  .username {
+    font-size: 2rem;
+    margin-left: 50px;
+  }
+
+  .login,
+  .logout button {
+    font-size: 2rem;
+  }
+
+  .auth-logo {
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav {
+    width: 90%;
+  }
+  .logo-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .links-container {
+    font-size: 1rem;
+  }
+
+  .register,
+  .username {
+    margin-left: 20px;
+  }
+
+  .logout button,
+  .username {
+    font-size: 1rem;
+  }
+
+  .auth-logo {
+    height: 20px;
+    width: 20px;
+  }
+}

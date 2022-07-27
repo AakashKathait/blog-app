@@ -1,0 +1,106 @@
+.card {
+  cursor: pointer;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  max-width: 800px;
+  width: 70%;
+  padding: 2rem 1.5rem;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(142, 5, 194, 0.4) -5px 5px, rgba(142, 5, 194, 0.3) -10px 10px,
+    rgba(142, 5, 194, 0.2) -15px 15px, rgba(142, 5, 194, 0.1) -20px 20px,
+    rgba(142, 5, 194, 0.05) -25px 25px;
+}
+
+.card + .card {
+  margin-top: 8rem;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.card-heading {
+  color: #570a57;
+  font-size: 2rem;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.card-heading::before {
+  content: "";
+  position: absolute;
+  background-color: #8e05c2;
+  width: 0;
+  height: 3px;
+  transition: width 0.3s ease;
+}
+
+.card-heading::after {
+  content: "";
+  position: absolute;
+  background-color: #8e05c2;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  transition: width 0.3s ease;
+}
+
+.card:hover > .card-heading::before {
+  width: 100%;
+  right: 0;
+}
+
+.card:hover > .card-heading::after {
+  width: 100%;
+  left: 0;
+}
+
+.card p {
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    padding: 2rem 3rem;
+  }
+
+  .card-heading {
+    font-size: 2.5rem;
+  }
+
+  .card p {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    padding: 1.5rem 1rem;
+  }
+  .card-heading {
+    line-height: 30px;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .card p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
+  .card:hover > .card-heading::before {
+    width: 0;
+  }
+
+  .card:hover > .card-heading::after {
+    width: 0;
+  }
+}

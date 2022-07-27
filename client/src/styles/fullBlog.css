@@ -1,0 +1,178 @@
+.full-blog-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.full-blog {
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  max-width: 1000px;
+  width: 80%;
+  min-height: 50vh;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  background-color: #180127;
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+}
+
+.comment-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.comment-logo {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  color: #ddd;
+  align-self: start;
+}
+
+.comment-logo:hover {
+  color: white;
+}
+
+.comment-input {
+  width: 40%;
+  border: none;
+  border-bottom: 1px solid #eee;
+  border-radius: 0;
+  color: #eee;
+  font-family: "Poppins", sans-serif;
+}
+
+.full-blog-title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  color: #8e05c2;
+  letter-spacing: 2px;
+}
+
+.full-blog-content {
+  position: relative;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  text-align: left;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  white-space: pre-wrap;
+}
+
+.fullblog-foot {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.full-blog-author {
+  font-family: "Antonio", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  position: relative;
+  color: #8e05c2;
+}
+
+.full-blog-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -6px;
+  height: 1px;
+  background-color: #eee;
+}
+
+.fullblog-foot::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+  height: 1px;
+  background-color: #eee;
+}
+
+.unauth {
+  margin-right: 0.5rem;
+  width: 100%;
+  text-align: right;
+}
+
+.comment-heading {
+  text-align: left;
+}
+
+.comment {
+  margin: 0.8rem 0;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  width: 90%;
+  font-size: 1.4rem;
+}
+
+.comment-author {
+  font-family: "Antonio", sans-serif;
+  text-align: right;
+  color: #8e05c2;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.fullblog-logo {
+  color: #ddd;
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  margin-left: 2rem;
+}
+
+.fullblog-logo:hover {
+  color: #8e05c2;
+}
+
+@media only screen and (max-width: 750px) {
+  .full-blog {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  .full-blog-title {
+    font-size: 2rem;
+  }
+  .full-blog-content {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  .full-blog-author {
+    font-size: 1.5rem;
+  }
+  .comment-heading {
+    font-size: 1.4rem;
+  }
+  .comment {
+    font-size: 1.2rem;
+  }
+}
