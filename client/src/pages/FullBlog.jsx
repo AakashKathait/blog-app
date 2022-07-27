@@ -103,12 +103,12 @@ const FullBlog = () => {
         });
       }
     } else {
-      toast.error("Sign in to add a comment", {
-        position: toast.POSITION.TOP_CENTER,
-      });
       window.scroll({
         top: 0,
         behavior: "auto",
+      });
+      toast.error("Sign in to add a comment", {
+        position: toast.POSITION.TOP_CENTER,
       });
     }
     setCommentData((prevData) => ({
