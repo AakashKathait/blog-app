@@ -45,6 +45,10 @@ const CreateBlog = () => {
     const titleLimit = 25;
     const titleWritten = title.split("").length;
     if (titleWritten > titleLimit) {
+      window.scroll({
+        top: 0,
+        behavior: "auto",
+      });
       toast.error("Title too long", {
         position: toast.POSITION.TOP_CENTER,
       });
@@ -52,6 +56,10 @@ const CreateBlog = () => {
       if (contentWrittent > contentLimit) {
         dispatch(createBlog(blogData));
       } else {
+        window.scroll({
+          top: 0,
+          behavior: "auto",
+        });
         toast.error(
           `More than ${contentLimit} words required, You need ${
             contentLimit - contentWrittent

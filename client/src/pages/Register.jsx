@@ -27,6 +27,10 @@ const Register = () => {
 
   useEffect(() => {
     if (isError) {
+      window.scroll({
+        top: 0,
+        behavior: "auto",
+      });
       toast.error(message, {
         position: toast.POSITION.TOP_CENTER,
       });

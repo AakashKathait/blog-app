@@ -20,7 +20,7 @@ const EditBlog = () => {
   const [blog] = blogs;
   useEffect(() => {
     if (isError) {
-      toast.error("Couldn't find the blog in database", {
+      toast.error(message, {
         position: toast.POSITION.TOP_CENTER,
       });
     }
